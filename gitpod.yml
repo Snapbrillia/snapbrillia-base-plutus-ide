@@ -13,16 +13,9 @@ ports:
 
 tasks:
   - name: Setup
-    init: |
-        git clone https://github.com/input-output-hk/plutus &&
-        gp sync-done bundle
+    init: git clone https://github.com/input-output-hk/plutus 
     command: cd plutus && nix-shell --extra-experimental-features flakes && direnv allow && cabal update
-  - name: Start Server
-    init: gp sync-await bundle
-    command: cd plutus && nix-shell --extra-experimental-features flakes
-  - name: Start Client
-    init: gp sync-await bundle
-    command: cd plutus && nix-shell --extra-experimental-features flakes 
+
 
 vscode:
   extensions:
