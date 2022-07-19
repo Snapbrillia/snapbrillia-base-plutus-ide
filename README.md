@@ -1,4 +1,4 @@
-# A Snapbrillia Plutus Core template on Gitpod (In-Progress)
+# A Snapbrillia Plutus Core template on Gitpod
 
 This is a Plutus Core template environment on [Gitpod](https://www.gitpod.io/).
 
